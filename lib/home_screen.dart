@@ -25,25 +25,25 @@ class _HomeScreenState extends State<HomeScreen> {
     meal m2 = meal(
         "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/copycat-western-bacon-cheeseburger-2-1649170836.jpeg",
         "Turkey Bacon",
-        "Classic Mix of Oninos, Tomatoes\nand Beef patty with hickery sauce");
+        "Packed with turkey bacons, slices\nand smashed with beef love");
     meals.add(m2);
 
     meal m3 = meal(
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTihHeZVlogdZxHGgO8aR1kdZHiPxyj0ePybA&usqp=CAU",
         "Beef Tower ",
-        "Classic Mix of Oninos, Tomatoes\nand Beef patty with hickery sauce");
+        "Appetizer sater, challenging beef \ntower filled with cheesy sauces");
     meals.add(m3);
 
     meal m4 = meal(
         "https://flaevor.com/wp-content/uploads/2020/09/BaconEggCheeseBurger-1.jpg",
         "The Egg Beast",
-        "Classic Mix of Oninos, Tomatoes\nand Beef patty with hickery sauce");
+        "Classic mix of beef with fried egg\nand grilled patty in honey sauce");
     meals.add(m4);
 
     meal m5 = meal(
         "https://www.recipetineats.com/wp-content/uploads/2017/07/Chicken-Burgers-4.jpg",
         "Chicken Mania",
-        "Classic Mix of Oninos, Tomatoes\nand Beef patty with hickery sauce");
+        "Only for losers, cant beat the beef\ntry being a chichen then");
     meals.add(m5);
   }
 
@@ -58,7 +58,7 @@ class _HomeScreenState extends State<HomeScreen> {
         itemCount: meals.length,
         itemBuilder: (BuildContext c, int index) => InkWell(
           child: Padding(
-            padding: EdgeInsets.only(top: 8, left: 15, right: 15),
+            padding: EdgeInsets.only(top: 8, left: 10, right: 10),
             child: Card(
               child: MenuCard(meals[index]),
               shadowColor: Colors.grey[50],
